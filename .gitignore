@@ -1,0 +1,18 @@
+# 🗂️ Carpetas a excluir
+__pycache__/
+**/__pycache__/
+
+images/
+**/images/
+
+# 1) Ignorar la carpeta venv en la raíz
+venv/
+
+# 2) Ignorar archivos específicos en la raíz
+.flake8
+requirements_ojo.txt
+ayuda.txt
+flask_app.py
+
+# 3) Ignorar archivo específico dentro de una subcarpeta
+data/db/base.parquet
