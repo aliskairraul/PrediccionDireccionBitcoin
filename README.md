@@ -126,10 +126,16 @@ xgboost==3.0.5
 ```
 
 ## 🌐 Proyecto Desplegado
-#### 🔗 Ver el Dashboard en línea
+
+#### 🔗 Ver el Dashboard en línea  
 El proyecto está disponible públicamente para su exploración a través del siguiente enlace:
 
-[https://demo-bitcoin-predictor.netlify.app](https://demo-bitcoin-predictor.netlify.app)
+[https://predicciondireccionbitcoin.onrender.com](https://predicciondireccionbitcoin.onrender.com)
+
+> 🛠️ Desplegado en Render (free tier) utilizando inferencia en CPU con modelos previamente entrenados en PyTorch, XGBoost y LightGBM.  
+> La instancia puede tardar entre 60 y 120 segundos en activarse si ha estado inactiva.
+
+
 
 ## 👨‍💻 Autor
 
