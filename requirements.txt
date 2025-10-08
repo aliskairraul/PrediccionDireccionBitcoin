@@ -11,3 +11,4 @@ scipy==1.15.3
 torch==2.8.0
 torchvision==0.23.0
 xgboost==3.0.5
+gunicorn
