@@ -1,6 +1,6 @@
 # Predicción de la Dirección Diaria de Bitcoin 📈
 
-![Vista del Proyecto](assets/vista_proyecto.png)
+![Vista del Proyecto](assets/direccion_bitcoin.png)
 
 Este proyecto presenta un enfoque práctico y reproducible para evaluar modelos de machine learning en la predicción de la dirección diaria del precio de Bitcoin. Diseñado como parte de mi portafolio como aspirante a científico de datos, combina automatización, trazabilidad y visualización interactiva para mostrar el rendimiento real de modelos entrenados exclusivamente con datos históricos.
 
