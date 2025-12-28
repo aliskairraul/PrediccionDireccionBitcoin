@@ -1,17 +1,95 @@
-body{
+body {
     background-color: #1e1e1e;
 }
-/* 🔷 Zona 1: Encabezado */
-.zona-1 {
+
+#app-container {
+    width: 100vw;
+    height: 140vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+/* 🔷 Zona 1: Encabezado */
+#container-zona-1 {
+    flex: 1;
+    width: 100%;
     padding: 10px 20px;
-    /* background-color: #1e1e1e; */
     background-color: #121212;
     color: white;
     border-bottom: 1px solid #444;
-    height: 100px;
     box-sizing: border-box;
+    background-color: #1e1e1e;
+    border-color: black;
+}
+
+/* 🔶 Zona 2: Cuerpo principal */
+#container-zona-2 {
+    flex: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #1e1e1e;
+    padding: 0%;
+    gap: 0.5rem;
+}
+
+#bloque-izquierdo {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0%;
+    box-sizing: border-box;
+    margin-left: 0.2vw;
+    margin-top: 0.5vw;
+}
+
+#subbloque-izq-1 {
+    /* flex: 4; */
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#subbloque-izq-2 {
+    /* flex: 1; */
+    height: 29%;
+    margin-top: 0.4rem;
+}
+
+#bloque-derecho {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    box-sizing: border-box;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vw;
+    gap: 0.5rem;
+}
+
+#subbloque-der-1 {
+    height: 38%;
+    width: 100%;
+}
+
+#subbloque-der-2 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+#grafico-izquierda,
+#grafico-derecha {
+    flex: 1;
+    height: 100%;
 }
 
 .fila-encabezado {
@@ -42,101 +120,12 @@ body{
     font-size: 16px;
 }
 
-/* 🔶 Zona 2: Cuerpo principal */
-.zona-2 {
-    display: flex;
-    height: calc(100vh - 60px);
-    /* background-color: #121212; */
-    background-color: #1e1e1e;
-    padding: 0%;
-}
-
-/* 🟫 Bloque Izquierdo (40%) */
-.bloque-izquierdo {
-    width: 39%;
-    display: flex;
-    flex-direction: column;
-    padding: 0%;
-    box-sizing: border-box;
-    margin-left: 0.2vw;
-    margin-top: 0.5vw;
-}
-
-/* Sub-Bloque 1: 4 tarjetas (2x2) */
-.subbloque-izq-1 {
-    flex: 0 0 69%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-#card-1,
-#card-2,
-#card-3,
-#card-4 {
-    width: 19vw;
-    height: 33.5vh;
-}
-
-#card-3,
-#card-4 {
-    margin-top: 0.5vh;
-}
-
 .subbloque-izq-2,
-#card-5 {
+#tabla {
     display: flex;
     justify-content: center;
-    width: 38.5vw;
-    height: 18vh;
-}
-
-/* Sub-Bloque 2: 1 tarjeta */
-.subbloque-izq-2 {
-    flex: 0 0 20%;
-    margin-top: 10px;
-}
-
-/* 🟦 Bloque Derecho (60%) */
-.bloque-derecho {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    padding: 0%;
-    box-sizing: border-box;
-    margin-left: 0.5vw;
-    margin-right: 0.2vw;
-    margin-top: 0.5vw;
-}
-
-/* Sub-Bloque 1: Scatter */
-.subbloque-der-1 {
-    height: 33.5vh;
-    width: 59.3vw;
-}
-
-#grafico-scatter {
-    height: 33.5vh;
-    width: 59.3vw;
-}
-
-/* Sub-Bloque 2: 2 gráficos horizontales */
-.subbloque-der-2 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.5vw;
-}
-
-.grafico-container,
-#grafico-izquierda,
-#grafico-derecha {
-    width: 29.5vw;
-    height: 52.5vh;
-}
-
-.zona-1{
-    background-color: #1e1e1e;
-    border-color: black;    
+    width: 100%;
+    height: 100%;
 }
 
 /* TARJETAS */
@@ -145,19 +134,18 @@ body{
     background-color: #1e1e1e;
     color: white;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* gráficos */
-.grafico-container, .subbloque-der-1 {
+.grafico-container,
+.subbloque-der-1 {
     /* background-color: #1f1f1f; */
     background-color: #121212;
     color: white;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-
 
 
 /* 🎯 Estilo personalizado para el Dropdown en tema oscuro */

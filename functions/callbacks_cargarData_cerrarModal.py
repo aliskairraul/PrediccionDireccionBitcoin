@@ -342,10 +342,10 @@ def cargar_data(n):
     df.write_parquet(ruta_db_backup)
 
     # Jalando la data que esta en github
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(str(ruta_db.resolve()), "wb") as f:
-            f.write(response.content)
+    # response = requests.get(url)
+    # if response.status_code == 200:
+    #     with open(str(ruta_db.resolve()), "wb") as f:
+    #         f.write(response.content)
 
     # Cargando el dataFrame actualizado y elaborando los Dataframes para cada Modelo
     df = pl.read_parquet(ruta_db)

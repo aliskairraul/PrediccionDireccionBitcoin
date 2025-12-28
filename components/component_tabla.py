@@ -71,7 +71,7 @@ def retorna_tabla(df: pl.DataFrame) -> html.Div:
             style_table={
                 # "height": "600px",
                 "width": "99%",
-                "height": "17vh",
+                "height": "39vh",
                 "overflowY": "auto",
                 "overflowX": "auto"
             },

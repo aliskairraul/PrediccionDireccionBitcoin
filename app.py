@@ -70,7 +70,7 @@ app.layout = html.Div([
                 clearable=False
             )
         ], className="fila-dropdown")
-    ], className="zona-1"),
+    ], id="container-zona-1", className="zona-1"),
 
     # 🔶 Zona 2: Cuerpo principal
     html.Div([
@@ -82,36 +82,36 @@ app.layout = html.Div([
                 html.Div(id="card-2", className="tarjeta"),
                 html.Div(id="card-3", className="tarjeta"),
                 html.Div(id="card-4", className="tarjeta")
-            ], className="subbloque-izq-1"),
+            ], id="subbloque-izq-1"),
 
             # Sub-Bloque 2 (20%): 1 tarjeta
             html.Div([
-                html.Div(id="card-5", className="tarjeta")
-            ], className="subbloque-izq-2")
-        ], className="bloque-izquierdo"),
+                html.Div(id="tabla", className="tarjeta")
+            ], id="subbloque-izq-2")
+        ], id="bloque-izquierdo"),
 
         # 🟦 Bloque Derecho (60%)
         html.Div([
-            # Sub-Bloque 1 (35%): Scatter
+            # Sub-Bloque 1 (40%): Scatter
             html.Div([
-                html.Div(id="grafico-scatter", className="grafico")
-            ], className="subbloque-der-1"),
+                html.Div(id="grafico-scatter", className="grafico-container")
+            ], id="subbloque-der-1"),
 
-            # Sub-Bloque 2 (65%): 2 gráficos horizontales
+            # Sub-Bloque 2 (66%): 2 gráficos horizontales
             html.Div([
                 html.Div([
-                    html.Div(id="grafico-izquierda", className="grafico")
-                ], className="grafico-container"),
+                    html.Div(className="grafico")
+                ], id="grafico-izquierda", className="grafico-container"),
                 html.Div([
-                    html.Div(id="grafico-derecha", className="grafico")
-                ], className="grafico-container")
-            ], className="subbloque-der-2")
-        ], className="bloque-derecho")
-    ], className="zona-2")
-])
+                    html.Div(className="grafico")
+                ], id="grafico-derecha", className="grafico-container")
+            ], id="subbloque-der-2")
+        ], id="bloque-derecho")
+    ], id="container-zona-2")
+], className="app-container")
 
 
 # 🏁 Ejecutar la app
-# if __name__ == "__main__":
-# app.run_server(debug=False, host="0.0.0.0", port=7860)
-# app.run(debug=True)
+if __name__ == "__main__":
+    # app.run_server(debug=False, host="0.0.0.0", port=7860)
+    app.run(debug=True)

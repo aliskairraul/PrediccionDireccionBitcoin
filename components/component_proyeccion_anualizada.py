@@ -27,7 +27,14 @@ def grafico_proyeccion_anualizada(modelos_backtesting: list):
             showlegend=True
         ))
     fig.update_layout(
-        title="Proyección Anualizada (% de Rentabilidad)",
+        # title="Proyección Anualizada (% de Rentabilidad)",
+        title={
+            "text": "Proyección Anualizada",
+            "y": 0.99,
+            "x": 0.5,
+            "xanchor": "center",
+            "yanchor": "top"
+        },
         template="plotly_dark",
         xaxis=dict(showticklabels=False, showgrid=False, zeroline=False),
         margin=dict(l=40, r=40, t=60, b=40)
@@ -36,7 +43,7 @@ def grafico_proyeccion_anualizada(modelos_backtesting: list):
         legend=dict(
             orientation="h",         # horizontal
             yanchor="bottom",        # anclaje inferior
-            y=0.98,                  # justo encima del gráfico
+            y=0.97,                  # justo encima del gráfico
             xanchor="center",
             x=0.5
         )

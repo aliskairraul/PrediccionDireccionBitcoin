@@ -30,7 +30,14 @@ def grafico_accuracy(modelos_backtesting):
             showlegend=True  # mantener para la leyenda
         ))
     fig.update_layout(
-        title="Accuracy Direccional (% de Aciertos de Cada Modelo)",
+        # title="Accuracy Direccional (% de Aciertos de Cada Modelo)",
+        title={
+            "text": "Accuracy Direccional",
+            "y": 0.99,
+            "x": 0.5,
+            "xanchor": "center",
+            "yanchor": "top"
+        },
         yaxis=dict(range=[menor - margen, mayor + margen]),
         xaxis=dict(showticklabels=False, showgrid=False, zeroline=False),  # 👈 oculta nombres
         template="plotly_dark",
@@ -40,7 +47,7 @@ def grafico_accuracy(modelos_backtesting):
         legend=dict(
             orientation="h",         # horizontal
             yanchor="bottom",        # anclaje inferior
-            y=0.98,                  # justo encima del gráfico
+            y=0.97,                  # justo encima del gráfico
             xanchor="center",
             x=0.5
         )

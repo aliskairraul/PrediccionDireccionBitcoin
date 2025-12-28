@@ -24,7 +24,7 @@ def marcar_datos_listos(data_2025, data_ayer):
     Output("card-2", "children"),
     Output("card-3", "children"),
     Output("card-4", "children"),
-    Output("card-5", "children"),
+    Output("tabla", "children"),
     Output("grafico-scatter", "children"),
     Output("grafico-izquierda", "children"),
     Output("grafico-derecha", "children"),
