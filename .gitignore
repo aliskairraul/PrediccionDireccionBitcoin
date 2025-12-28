@@ -13,6 +13,7 @@ venv/
 requirements_ojo.txt
 ayuda.txt
 flask_app.py
+requirements_ojo.txt
 
 # 3) Ignorar archivo específico dentro de una subcarpeta
 data/db/base.parquet
